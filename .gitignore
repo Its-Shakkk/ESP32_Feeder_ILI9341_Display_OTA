@@ -1,0 +1,36 @@
+# ESP-IDF build output
+build/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Python cache and environments
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Private OTA signing key
+ota_private.pem
+
+# Local configuration
+sdkconfig
+sdkconfig.old
+
+# Local deployment script
+build_and_publish.bat
+
+# Generated OTA artifacts
+manifest.json
+*.bin
+*.elf
+*.map
+
+# Environment secrets
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db

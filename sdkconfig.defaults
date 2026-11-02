@@ -1,0 +1,19 @@
+# =========================================================================
+# Feeder + OTA — defaults for 4 MB flash
+# =========================================================================
+CONFIG_ESPTOOLPY_FLASHSIZE_4MB=y
+CONFIG_ESPTOOLPY_FLASHSIZE="4MB"
+
+CONFIG_PARTITION_TABLE_CUSTOM=y
+CONFIG_PARTITION_TABLE_CUSTOM_FILENAME="partitions.csv"
+
+# Required for rollback_manager.c to work at all
+CONFIG_BOOTLOADER_APP_ROLLBACK_ENABLE=y
+
+# esp_app_get_description()->version == APP_FW_VERSION
+CONFIG_APP_PROJECT_VER_FROM_CONFIG=y
+CONFIG_APP_PROJECT_VER="4.0.0"
+
+# Allow HTTP (Phase 2). Remove in Phase 3 when you switch to HTTPS.
+CONFIG_ESP_HTTPS_OTA_ALLOW_HTTP=y
+
